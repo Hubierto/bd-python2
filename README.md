@@ -4,8 +4,15 @@
 
 Criar CRUD com python em uma estrutura de pacotes.
 
-### Tecnologias:
+-Create(criar)
+-Read(Buscar/Pesquisar)
+-Update(Atualizar)
+-Delete(Excluir)
 
-- 
-ORM: SQLALchemy
-- Docker: banco de dados MySQL
+### Tecnologias:
+ 
+-ORM: SQLALchemy
+-Containerização: Docker
+-Banco de dados: MySQL
+-Orquestração dde containers: Docker compose
+-Versionamento Git
