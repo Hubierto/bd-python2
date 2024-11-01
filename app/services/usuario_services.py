@@ -1,6 +1,7 @@
 from models.usuario import Usuario
 from repositories.usuario_repository import UsuarioRepository
 
+
 class UsuarioService:
     def __init__(self, repository: UsuarioRepository) -> None:
         self.repository = repository
@@ -10,14 +11,10 @@ class UsuarioService:
             usuario = Usuario(nome=nome, email=email, senha=senha)
             self.repository.salvar_usuario(usuario)
             print("Usuário salvo com sucesso!")
-        except TypeError as erro:        
+        except TypeError as erro:
             print(f"Usuário salvo com sucesso: {erro}")
-        except TypeError as erro:   
+        except TypeError as erro:
             print(f"Usuário salvo com sucesso: {erro}")
-    
-    def listar_todos_usuarios(self):    
-        return self.repository.listar_todos_usuarios()
-        
-            
 
-        
+    def listar_todos_usuarios(self):
+        return self.repository.listar_todos_usuarios()
