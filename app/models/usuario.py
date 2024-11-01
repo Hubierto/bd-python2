@@ -10,7 +10,7 @@ class Usuario(Base):
 
     id = Column(Integer, primary_key=True, autoincrement=True)
     nome = Column(String(250))
-    email = Column(String(250), unique=True)
+    email = Column(String(250))
     senha = Column(String(250))
 
     #Definindo atributos da classe
