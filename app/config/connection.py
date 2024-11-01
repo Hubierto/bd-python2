@@ -3,7 +3,7 @@ from sqlalchemy.orm import sessionmaker
 from contextlib import contextmanager
 
 #Parãmetros para conexão com banco de dados
-db_user = " "
+db_user = "user"
 db_password = "user_password"
 db_host = "localhost"
 db_port ="3306"
