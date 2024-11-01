@@ -10,7 +10,7 @@ class UsuarioRepository:
         self.session.add(usuario)
         self.session.commit()
 
-    def pesquisae_usuario_por_email(self, email: str):
+    def pesquisar_usuario_por_email(self, email: str):
         return self.session.query(Usuario).filter_by(email=email).first()
 
     def deletar_usuario(self, usuario: Usuario):
